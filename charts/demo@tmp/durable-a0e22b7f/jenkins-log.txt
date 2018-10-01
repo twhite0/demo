@@ -1,0 +1,5 @@
++ make tag
+sed -i -e "s/version:.*/version: 0.0.5/" Chart.yaml
+sed -i -e "s|repository: .*|repository: http://jenkins-x-docker-registry-jx.192.168.99.101.nip.io:5000\/twhite0\/demo|" values.yaml
+sed -i -e "s/tag: .*/tag: 0.0.5/" values.yaml
+git add --all
